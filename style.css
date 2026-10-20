@@ -213,3 +213,16 @@ footer{border-top:1px solid #151515;background:linear-gradient(#000,#050805)}
 @media(prefers-reduced-motion:reduce){.glow,.grad,.hero *,.phero *{animation:none!important}.reveal{opacity:1;transform:none;transition:none}}
 .plan .price sup{color:#666;background:none;-webkit-text-fill-color:#666}
 .plan.rec .price sup{color:var(--green);-webkit-text-fill-color:var(--green)}
+
+/* support form */
+.sform{max-width:640px;margin:0 auto;background:#0d0d0d;border:1px solid #1f1f1f;border-radius:12px;padding:34px;box-shadow:0 30px 80px rgba(66,197,135,.12)}
+.sform label{display:block;font-size:13px;font-weight:600;color:#ccc;margin:0 0 6px}
+.sform input,.sform select,.sform textarea{width:100%;background:#161616;border:1px solid #2a2a2a;color:#fff;border-radius:8px;padding:12px 14px;font:15px/1.4 Inter,sans-serif;margin-bottom:18px;outline:0;transition:border .2s,box-shadow .2s}
+.sform input:focus,.sform select:focus,.sform textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(66,197,135,.2)}
+.sform select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%2342c587' stroke-width='2'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center}
+.sform select option{background:#161616}
+.sform textarea{resize:vertical}
+.sform .row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:520px){.sform .row2{grid-template-columns:1fr}.sform{padding:22px}}
+.sform .btn{width:100%;text-align:center;border:0}
+.thanks{display:none;text-align:center;color:#fff;font-size:18px;max-width:640px;margin:0 auto;background:#0d0d0d;border:1px solid var(--green);border-radius:12px;padding:30px}
